@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+    <script type="application/javascript" src="js/moment.min.js"></script>
+    <script type="application/javascript" src="js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container" style="margin-top: 150px;">
+      <div class="columns is-desktop">
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <div class="column">
+          <label>Height in cm:</label>
+          <input id="height" class="input is-rounded" type="text" />
+        </div>
+        <div class="column">
+          <label>Current weight in kg:</label>
+          <input id="weight" class="input is-rounded" type="text" />
+        </div>
+        <div class="column">
+          <label>Goal weight in kg:</label>
+          <input id="goal_weight" class="input is-rounded" type="text" />
+        </div>
+        <div class="column">
+          <label>Age:</label>
+          <input id="age" class="input is-rounded" type="text" />
+        </div>
+        <div class="column">
+          <label>Select goal date:</label>
+          <input id="finish_date" class="input is-rounded" type="date" />
+        </div>
+      </div>
+      <div class="column">
+        <a href="#" id="values" class="button is-primary">Calculate</a>
+      </div>
+      <div id="display">
+      </div>
+    </div>
+  </body>
+</html>
